@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Design Survey</title>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/main.css">
+</head>
+
+<body>
+    <header id="pageTitle">
+        <h1>Website Design Survey</h1>
+    </header>
+
+    <div id="container">
+        <!-- BoC Image -->
+        <a href="https://www.bankofcanada.ca" id="bocLink">
+            <img src="/assets/homepage.png" title="Click here to visit the Bank of Canada website" />
+            <p id="bocLinkText">Click here to visit the Bank of Canada website</p>
+        </a>
+
+        <form>
+            <!-- Radio buttons -->
+            <label for="simplicity">Do you think the website is simple or overly complicated to use?</label><br>
+
+            <input type="radio" id="simple" name="simplicity" value="simple">
+            <label class="form-check-label" for="simplicity">Simple</label><br>
+
+            <input type="radio" id="complicated" name="simplicity" value="complicated">
+            <label class="form-check-label" for="simplicity">Complicated</label><br>
+
+            <!-- Text -->
+            <label for="layoutOpinion">Do you think the layout of the site attracts you to learn more information? If so, please explain why.</label><br>
+            <textarea id="layoutOpinion" class="form-control" name="layoutOpinion" rows="2" cols="53"></textarea><br>
+
+            <!-- Multiple checkboxes -->
+            <label for="designAspects">Which of the following did you like most about the website's design?</label><br>
+
+            <input type="checkbox" id="colour" name="designAspects" value="colour">
+            <label class="form-check-label" for="designAspects">Colour scheme</label><br>
+
+            <input type="checkbox" id="aesthetic" name="designAspects" value="aesthetic">
+            <label class="form-check-label" for="designAspects">Aesthetic design</label><br>
+
+            <input type="checkbox" id="typography" name="designAspects" value="typography">
+            <label class="form-check-label" for="designAspects">Typography</label><br>
+
+            <input type="checkbox" id="functionality" name="designAspects" value="functionality">
+            <label class="form-check-label" for="designAspects">Functionality</label><br>
+
+            <input type="checkbox" id="navigation" name="designAspects" value="navigation">
+            <label class="form-check-label" for="designAspects">Effective navigation</label><br>
+
+            <input type="checkbox" id="layout" name="designAspects" value="layout">
+            <label class="form-check-label" for="designAspects">Consistent page layouts</label><br><br>
+
+            <!-- Dropdown  -->
+            <label for="leastFave">Please select your least favourite aspect of the design.</label><br>
+            <select id="leastFave" class="form-control" name="leastFave">
+              <option value="Colour Scheme">Colour Scheme</option>
+              <option value="Aesthetics">Aesthetics</option>
+              <option value="Typography">Typography</option>
+              <option value="Functionality">Functionality</option>
+              <option value="Navigation">Navigation</option>
+              <option value="Page layouts">Page layouts</option>
+            </select><br>
+
+            <!-- Comments -->
+            <label for="comment">Do you have any improvements or suggestions for the site?</label><br>
+            <textarea name="comment" class="form-control" rows="4" cols="53"></textarea><br>
+
+            <!-- Likert scale -->
+            <label for="navRating">On a scale of 1 to 5, how easily were you able to navigate through the site?</label><br>
+            <div id="sliderContainer">
+                <span float="right">1</span>
+                <input name="navRating" type="range" class="custom-range slider" min="1" max="5">
+                <span float="left">5</span>
+            </div><br>
+
+            <!-- Submit button -->
+            <button formmethod="POST" type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+
+        </form>
+    </div>
+    <script src="/assets/action.js"></script>
+</body>
+
+<footer>
+    <p>Website designed by <b>Charita Koya</b></p>
+</footer>
+
+</html>

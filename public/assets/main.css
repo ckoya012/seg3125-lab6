@@ -1,0 +1,87 @@
+/* Set up the background and body style */
+
+html {
+    background-image: url('background.jpg');
+}
+
+body {
+    background-color: transparent;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 5em 5em;
+    background: white;
+    padding: 30px;
+}
+
+#pageTitle {
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    margin: 4em 0 4em 0;
+}
+
+
+/* Styling for the BoC image */
+
+#bocLink {
+    margin: 30px;
+}
+
+#bocLink img {
+    width: 100%;
+    height: 500px;
+}
+
+#bocLinkText {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#bocLink:hover img {
+    padding: 1px;
+    background-color: #BFBFBF;
+}
+
+
+/* Form styles */
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#submitBtn {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.form-check-label {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+#sliderContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.slider {
+    margin: 0px 20px;
+}
+
+
+/* Footer styles */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0em 5em 3em;
+    font-size: 1.5em;
+    color: white;
+}
